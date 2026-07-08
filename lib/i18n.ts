@@ -83,7 +83,7 @@ export const ui = {
     placeholder: { zh: "你的邮箱", en: "Your email" },
     button: { zh: "订阅", en: "Subscribe" },
     note: {
-      zh: "也可以关注公众号「替你试过了」（筹备中）",
+      zh: "也可以关注微信公众号「TriedForYou」",
       en: "No spam. Unsubscribe anytime.",
     },
   },

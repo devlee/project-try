@@ -1,7 +1,21 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ui, isLocale } from "@/lib/i18n";
+import type { Metadata } from "next";
+import { ui, isLocale, pageAlternates } from "@/lib/i18n";
 import { getAllTries, getLatestTry } from "@/lib/tries";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  return {
+    description: ui.tagline[locale],
+    alternates: pageAlternates(locale),
+  };
+}
 import { CostBadges } from "@/components/CostBadges";
 import { ScorePill } from "@/components/ScorePill";
 import { SubscribeForm } from "@/components/SubscribeForm";

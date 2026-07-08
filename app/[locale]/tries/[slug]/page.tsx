@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { ui, isLocale, locales } from "@/lib/i18n";
+import { ui, isLocale, locales, pageAlternates } from "@/lib/i18n";
 import { getAllTries, getTryBySlug } from "@/lib/tries";
 import { CostBadges } from "@/components/CostBadges";
 import { ScorePill } from "@/components/ScorePill";
@@ -24,6 +24,13 @@ export async function generateMetadata({
   return {
     title: card.title[locale],
     description: card.verdict[locale],
+    alternates: pageAlternates(locale, `/tries/${slug}`),
+    openGraph: {
+      title: card.title[locale],
+      description: card.verdict[locale],
+      type: "article",
+      publishedTime: card.date,
+    },
   };
 }
 

@@ -6,6 +6,18 @@ export function isLocale(value: string): value is Locale {
   return (locales as string[]).includes(value);
 }
 
+/** hreflang/canonical alternates for a bilingual page path like "/tries". */
+export function pageAlternates(locale: Locale, path = "") {
+  return {
+    canonical: `/${locale}${path}`,
+    languages: {
+      zh: `/zh${path}`,
+      en: `/en${path}`,
+      "x-default": `/en${path}`,
+    },
+  };
+}
+
 export const ui = {
   brand: { zh: "替你试过了", en: "Tried For You" },
   tagline: {

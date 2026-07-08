@@ -1,6 +1,21 @@
 import { notFound } from "next/navigation";
-import { ui, isLocale } from "@/lib/i18n";
+import type { Metadata } from "next";
+import { ui, isLocale, pageAlternates } from "@/lib/i18n";
 import type { Locale } from "@/lib/types";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  return {
+    title: locale === "zh" ? "关于 · Built by AI" : "About · Built by AI",
+    description: ui.about.title[locale],
+    alternates: pageAlternates(locale, "/about"),
+  };
+}
 
 const content: Record<
   Locale,

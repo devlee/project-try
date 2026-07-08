@@ -1,8 +1,23 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ui, isLocale } from "@/lib/i18n";
+import type { Metadata } from "next";
+import { ui, isLocale, pageAlternates } from "@/lib/i18n";
 import { getAllTries } from "@/lib/tries";
 import { CostBadges } from "@/components/CostBadges";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  return {
+    title: ui.archive.title[locale],
+    description: ui.archive.subtitle[locale],
+    alternates: pageAlternates(locale, "/tries"),
+  };
+}
 
 export default async function ArchivePage({
   params,

@@ -49,10 +49,11 @@ npm run build  # 生产构建
 
 ## 上线前待办
 
-- [ ] **部署**：推荐 Vercel（`vercel --prod`），或 Cloudflare Pages（需 `@opennextjs/cloudflare` 适配）。域名已在 Cloudflare，Vercel 部署后在 Cloudflare DNS 加 CNAME 指向 `cname.vercel-dns.com` 即可
-- [ ] **邮件订阅**：注册 [Buttondown](https://buttondown.com)（免费 100 订阅者），把用户名填入 `components/SubscribeForm.tsx` 的 `BUTTONDOWN_USERNAME`。接通前提交的邮箱暂存在访客浏览器 localStorage，不会丢但也收不到，尽早接通
-- [ ] **打卡后端**：`TriedButton` 目前是 localStorage 雏形，Phase 2 换成真实计数（Cloudflare Workers KV 或 Vercel KV 均可，成本约为零）
-- [ ] **统计**：接入 Plausible / Umami / Cloudflare Web Analytics（选一个，都免注册用户隐私友好）
+- [x] **部署**：已上线 Vercel，域名 triedforyou.com（Cloudflare DNS），GitHub 推送自动部署
+- [ ] **邮件订阅**：Buttondown 审核中。通过后把用户名填入 `components/SubscribeForm.tsx` 的 `BUTTONDOWN_USERNAME`。接通前提交的邮箱暂存在访客浏览器 localStorage
+- [x] **打卡后端**：Upstash Redis（Vercel Marketplace 免费档），接口在 `app/api/tried/[slug]/route.ts`
+- [x] **统计**：Vercel Web Analytics 已接入代码，需在 Vercel 控制台 Project → Analytics 开启
+- [x] **SEO 基本盘**：sitemap / robots / hreflang / OG 分享图 / 品牌 favicon / www 301
 - [ ] **复核示例内容**：见上文内容红线
 
 ## 运营节奏（Phase 1）

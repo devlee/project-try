@@ -20,8 +20,8 @@ export const elevenlabs: TryCard = {
   cost: {
     timeToWowMinutes: 7,
     money: {
-      zh: "免费版每月约 1 万字符额度，够生成十几段短语音",
-      en: "Free plan gives ~10k characters/month — a dozen short clips",
+      zh: "免费版每月 1 万积分，约合 10 分钟语音，够生成十几段短音频",
+      en: "Free plan gives 10k credits/month — about 10 minutes of speech",
     },
     requiresCreditCard: false,
     requiresWaitlist: false,
@@ -63,12 +63,12 @@ export const elevenlabs: TryCard = {
       en: "Minute 0: sign-up email verification can land in spam",
     },
     {
-      zh: "第 15 分钟：想克隆自己的声音时撞墙——Instant Voice Clone 需要 $5/月 的 Starter 档",
-      en: "Minute 15: the wall — cloning your own voice needs the $5/mo Starter plan",
+      zh: "第 15 分钟：想克隆自己的声音时撞墙——Instant Voice Clone 需要 $6/月 的 Starter 档（年付约 $5/月）",
+      en: "Minute 15: the wall — cloning your own voice needs the $6/mo Starter plan (~$5/mo billed yearly)",
     },
     {
-      zh: "免费额度按字符计，长文章一篇就能耗掉大半",
-      en: "Free credits are per character; one long article can eat most of them",
+      zh: "免费额度只够约 10 分钟语音，长文章一篇就能耗掉大半；且免费生成的音频不可商用",
+      en: "10 minutes of free speech goes fast — one long article can eat most of it; free output has no commercial license",
     },
   ],
   whoShouldSkip: {
@@ -85,8 +85,8 @@ export const elevenlabs: TryCard = {
       en: "Pick a consistent brand voice and produce a full audio version of one article",
     },
     day30: {
-      zh: "评估是否值得 $5/月：如果每周都在产出音频内容，克隆自己的声音开始划算",
-      en: "Decide on the $5/mo plan: if you ship audio weekly, cloning your own voice starts to pay off",
+      zh: "评估是否值得 $6/月：如果每周都在产出音频内容，克隆自己的声音开始划算",
+      en: "Decide on the $6/mo plan: if you ship audio weekly, cloning your own voice starts to pay off",
     },
   },
   disclosure: {

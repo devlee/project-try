@@ -67,8 +67,8 @@ export const suno: TryCard = {
       en: "Minute 20: the wall — commercial rights require the $10/mo Pro plan",
     },
     {
-      zh: "免费版生成的歌曲不可商用，发社交平台自娱没问题",
-      en: "Free-tier songs are non-commercial; fine for social sharing, not for monetized content",
+      zh: "免费版生成的歌曲永久不可商用——之后订阅也不会追溯授权，发社交平台自娱没问题",
+      en: "Free-tier songs stay non-commercial forever — subscribing later doesn't retroactively license them; social sharing is fine",
     },
   ],
   whoShouldSkip: {

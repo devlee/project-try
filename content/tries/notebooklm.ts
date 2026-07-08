@@ -63,12 +63,12 @@ export const notebooklm: TryCard = {
       en: "Minute 0: requires a Google account, which is friction if you don't have one",
     },
     {
-      zh: "第 10 分钟：音频默认是英文，想要中文播客需要在自定义指令里明确要求，效果也稍逊",
-      en: "Minute 10: audio defaults to English; other languages work via custom instructions but sound less natural",
+      zh: "第 10 分钟：音频默认跟随 Google 账号语言，想要中文播客需在设置里把输出语言切成中文（官方已支持 80+ 语言）",
+      en: "Minute 10: audio follows your Google account language by default; switch the output language in settings if needed (80+ languages supported)",
     },
     {
-      zh: "免费版每天 3 次音频生成，重度使用会撞墙",
-      en: "Free plan caps audio generation at 3 per day — heavy users will hit it",
+      zh: "免费版每天 3 次音频生成（按滚动 24 小时重置，不是零点刷新），重度使用会撞墙",
+      en: "Free plan caps audio at 3 per day on a rolling 24-hour window — heavy users will hit it",
     },
   ],
   whoShouldSkip: {

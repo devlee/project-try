@@ -176,7 +176,7 @@ export default async function TryDetailPage({
 
       {/* Check-in */}
       <div className="mb-10 rounded-2xl border border-line bg-white p-6">
-        <TriedButton slug={card.slug} locale={locale} seedCount={0} />
+        <TriedButton slug={card.slug} locale={locale} />
       </div>
 
       {/* Disclosure */}

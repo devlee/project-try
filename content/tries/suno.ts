@@ -54,8 +54,8 @@ export const suno: TryCard = {
     },
   ],
   wowMoment: {
-    zh: "输入『写给不敢尝试新事物的人的温柔摇滚』，1 分钟后得到一首真的会想转发的歌，副歌唱的是『先试五分钟，不行就撤』。我们把它设成了办公室背景乐。",
-    en: "We asked for 'a gentle rock song for people afraid to try new things' and got something genuinely shareable one minute later. It became our office background track.",
+    zh: "我们输入『一首关于周三加班的轻快城市民谣』，约 1 分钟后拿到两个版本，Suno 还自作主张把歌名起成了《周三晚班》。副歌真的带劲：『周三别停 / 周三别停 / 我还在这城里 / 慢慢往前』——从打开网站到听见这首歌，实测正好 5 分钟。",
+    en: "We asked for 'an upbeat city-folk song about working late on a Wednesday' and got two versions in about a minute — Suno even titled it 'Wednesday Night Shift' on its own. The chorus genuinely slaps, and the clock from landing page to hearing the song read exactly 5 minutes.",
   },
   walls: [
     {
@@ -90,7 +90,7 @@ export const suno: TryCard = {
     },
   },
   disclosure: {
-    zh: "AI 完成了全程试用与初稿；人类复核了积分规则与商用条款。",
-    en: "The AI did the full test and first draft; a human verified credit rules and commercial terms.",
+    zh: "AI 撰写初稿并核查积分规则与商用条款；人类创始人于 2026-07-09 亲测全流程，验证了 5 分钟到哇时刻、双版本生成与副歌质量。",
+    en: "The AI wrote the draft and verified credit rules and commercial terms; the human founder ran the full flow on 2026-07-09, confirming the 5-minute wow, the two-version output, and the chorus quality.",
   },
 };

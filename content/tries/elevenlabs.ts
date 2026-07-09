@@ -9,8 +9,8 @@ export const elevenlabs: TryCard = {
     category: { zh: "AI 语音生成", en: "AI voice generation" },
   },
   title: {
-    zh: "7 分钟，不绑卡，听到 AI 用别人的声音读你写的话",
-    en: "Hear an AI read your words in a lifelike voice — 7 minutes, no card",
+    zh: "3 分钟，不绑卡，听到 AI 用别人的声音读你写的话",
+    en: "Hear an AI read your words in a lifelike voice — 3 minutes, no card",
   },
   verdict: {
     zh: "文字转语音的哇时刻免费就能拿到；克隆自己的声音才需要付费，可以以后再说。",
@@ -18,7 +18,7 @@ export const elevenlabs: TryCard = {
   },
   tryScore: 8,
   cost: {
-    timeToWowMinutes: 7,
+    timeToWowMinutes: 3,
     money: {
       zh: "免费版每月 1 万积分，约合 10 分钟语音，够生成十几段短音频",
       en: "Free plan gives 10k credits/month — about 10 minutes of speech",
@@ -37,8 +37,8 @@ export const elevenlabs: TryCard = {
   },
   firstSteps: [
     {
-      zh: "注册 elevenlabs.io，邮箱即可，不用绑卡",
-      en: "Sign up at elevenlabs.io — email only, no card",
+      zh: "注册 elevenlabs.io，Google 账号或邮箱均可，不用绑卡（实测 Google 登录 2 分钟搞定）",
+      en: "Sign up at elevenlabs.io with Google or email, no card — Google took us 2 minutes flat",
     },
     {
       zh: "进入 Text to Speech，从声音库挑一个你喜欢的声音",
@@ -54,8 +54,8 @@ export const elevenlabs: TryCard = {
     },
   ],
   wowMoment: {
-    zh: "把一段公众号文章粘进去，30 秒后一个从未存在过的『主播』把它读了出来，连『——』处的停顿都处理对了。中文效果比预期好。",
-    en: "We pasted in a blog paragraph and 30 seconds later a narrator who has never existed read it back, nailing even the em-dash pauses.",
+    zh: "实测从打开官网到听见第一段语音只花了 3 分钟：Google 登录 2 分钟，挑声音加生成 1 分钟。一个从未存在过的『主播』把你写的话读出来，自然到需要提醒自己这是合成的。",
+    en: "From landing page to hearing the first clip took exactly 3 minutes in our test: 2 to sign up with Google, 1 to pick a voice and generate. A narrator who has never existed reads your words back — natural enough that you have to remind yourself it's synthetic.",
   },
   walls: [
     {
@@ -63,8 +63,8 @@ export const elevenlabs: TryCard = {
       en: "Minute 0: sign-up email verification can land in spam",
     },
     {
-      zh: "第 15 分钟：想克隆自己的声音时撞墙——Instant Voice Clone 需要 $6/月 的 Starter 档（年付约 $5/月）",
-      en: "Minute 15: the wall — cloning your own voice needs the $6/mo Starter plan (~$5/mo billed yearly)",
+      zh: "想克隆自己的声音时撞墙——Instant Voice Clone 需要 $6/月 的 Starter 档（年付约 $5/月）",
+      en: "The wall: cloning your own voice needs the $6/mo Starter plan (~$5/mo billed yearly)",
     },
     {
       zh: "免费额度只够约 10 分钟语音，长文章一篇就能耗掉大半；且免费生成的音频不可商用",
@@ -90,7 +90,7 @@ export const elevenlabs: TryCard = {
     },
   },
   disclosure: {
-    zh: "AI 完成了注册、试用与计时；人类复核了价格档位与免费额度数字。",
-    en: "The AI did the sign-up, testing, and timing; a human verified pricing tiers and free-tier numbers.",
+    zh: "AI 撰写初稿并核查价格档位与免费额度；人类创始人于 2026-07-09 亲测全流程，验证了 3 分钟到哇时刻与语音自然度。",
+    en: "The AI wrote the draft and verified pricing tiers and free-tier numbers; the human founder ran the full flow on 2026-07-09, confirming the 3-minute wow and the voice quality.",
   },
 };

@@ -9,8 +9,8 @@ export const notebooklm: TryCard = {
     category: { zh: "AI 阅读与研究", en: "AI reading & research" },
   },
   title: {
-    zh: "10 分钟，把一篇 40 页的论文变成两个人聊天的播客",
-    en: "Turn a 40-page paper into a two-host podcast in 10 minutes",
+    zh: "15 分钟，把一篇论文变成两个人用中文聊天的播客",
+    en: "Turn a research paper into a two-host podcast in 15 minutes",
   },
   verdict: {
     zh: "免费额度足够玩出第一个哇时刻，值得今天就试。",
@@ -18,7 +18,7 @@ export const notebooklm: TryCard = {
   },
   tryScore: 9,
   cost: {
-    timeToWowMinutes: 10,
+    timeToWowMinutes: 15,
     money: {
       zh: "免费版每天可生成 3 个音频概览，试玩完全够用",
       en: "Free plan allows 3 audio overviews per day — plenty for a first run",
@@ -45,8 +45,8 @@ export const notebooklm: TryCard = {
       en: "Create a notebook and drop in any PDF — a paper, a report, a manual",
     },
     {
-      zh: "点击 Audio Overview，等 3-5 分钟",
-      en: "Click Audio Overview and wait 3–5 minutes",
+      zh: "点击 Audio Overview，等 5-15 分钟（实测一篇 15 页论文等了 11 分钟，去泡杯茶）",
+      en: "Click Audio Overview and wait 5–15 minutes (a 15-page paper took us 11 — go make tea)",
     },
     {
       zh: "戴上耳机听两位 AI 主播讨论你的文档，这就是哇时刻",
@@ -54,8 +54,8 @@ export const notebooklm: TryCard = {
     },
   ],
   wowMoment: {
-    zh: "我们扔进去一篇枯燥的技术白皮书，5 分钟后得到一段 12 分钟的双人播客，两位主播还会互相打趣、举生活化的例子。第一次听到自己文档被『聊』出来的人几乎都会愣一下。",
-    en: "We fed it a dry technical whitepaper and got a 12-minute two-host podcast, complete with banter and everyday analogies. Hearing your own document 'talked about' is genuinely startling the first time.",
+    zh: "我们扔进去《Attention Is All You Need》——奠定所有大模型基础的那篇 Transformer 论文，11 分钟后得到一段 17 分 48 秒的播客：一男一女两位中文主播把注意力机制聊得像职场故事。语言直接跟随 Google 账号设置，中文不用任何额外操作。",
+    en: "We fed it 'Attention Is All You Need' — the Transformer paper behind every modern LLM — and 11 minutes later got a 17-minute-48-second podcast of two hosts turning attention mechanisms into a workplace story. The language followed our account settings automatically.",
   },
   walls: [
     {
@@ -63,8 +63,8 @@ export const notebooklm: TryCard = {
       en: "Minute 0: requires a Google account, which is friction if you don't have one",
     },
     {
-      zh: "第 10 分钟：音频默认跟随 Google 账号语言，想要中文播客需在设置里把输出语言切成中文（官方已支持 80+ 语言）",
-      en: "Minute 10: audio follows your Google account language by default; switch the output language in settings if needed (80+ languages supported)",
+      zh: "音频生成等待比想象中长：实测 11 分钟，期间不能关页面走人——这是全程最考验耐心的一步",
+      en: "The generation wait is longer than you'd expect — 11 minutes in our test — and it's the patience test of the whole flow",
     },
     {
       zh: "免费版每天 3 次音频生成（按滚动 24 小时重置，不是零点刷新），重度使用会撞墙",
@@ -90,7 +90,7 @@ export const notebooklm: TryCard = {
     },
   },
   disclosure: {
-    zh: "AI 完成了全程试用、计时和初稿撰写；人类复核了免费额度、访问方式等关键事实。",
-    en: "The AI did the full hands-on test, timing, and first draft; a human verified free-tier limits and access details.",
+    zh: "AI 撰写初稿并核查免费额度与语言支持；人类创始人于 2026-07-09 用 Transformer 论文亲测全流程，验证了 11 分钟生成等待与中文双主播输出。",
+    en: "The AI wrote the draft and verified free-tier limits and language support; the human founder ran the full flow on 2026-07-09 with the Transformer paper, confirming the 11-minute wait and Chinese two-host output.",
   },
 };

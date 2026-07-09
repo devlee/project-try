@@ -2,7 +2,7 @@ import type { TryCard } from "@/lib/types";
 
 export const elevenlabs: TryCard = {
   slug: "elevenlabs-voice-clone",
-  date: "2026-07-07",
+  date: "2026-07-08",
   tool: {
     name: "ElevenLabs",
     url: "https://elevenlabs.io",

@@ -2,7 +2,7 @@ import type { TryCard } from "@/lib/types";
 
 export const notebooklm: TryCard = {
   slug: "notebooklm-audio-overview",
-  date: "2026-07-06",
+  date: "2026-07-08",
   tool: {
     name: "NotebookLM",
     url: "https://notebooklm.google.com",
